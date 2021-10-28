@@ -1,0 +1,23 @@
+
+Proje 1
+[22,27,16,2,18,6] -> Insertion Sort
+
+1.Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+* Insertion Sort: [2,27,16,22,18,6], [2,6,16,22,18,27], [2,6,16,18,22,27] O(n²)
+* Merge Sort: 22,27,16 - 2,18,6    22 - 27,16 - 2,18 - 6    22 -27 - 16 - 2 - 18 - 6     22- 16,27 - 2- 6,18  16,22,27 - 2,6,18   2,6,16,18,22,27 Bu durum average case O(nlogn).
+* Quick Sort: [22,27,16,2,18,6] 6 <- pivot    2(sol) - 6 - 16,18,22,27(sağ)  27 <- pivot 16,18,22(sol) - 27(sağ)  22 <- pivot 16,18(sol - 22(sağ)  18 <- pivot 16(sol) - 18(sağ)
+Bu durum worst case oluyor yani O(n²).
+
+Big-O gösterimini yazınız. 
+*İlk soruda cevaplandı.
+Time Complexity: Average case: Aradığımız sayının ortada olması,Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.
+Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Worst case
+
+
+
+[7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
+
+[2,3,5,8,7,9,4,15,6]
+[2,3,4,8,7,9,5,15,6]
+[2,3,4,8,7,9,5,15,6]
+[2,3,4,5,7,9,8,15,6]
